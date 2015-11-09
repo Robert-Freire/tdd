@@ -31,7 +31,7 @@ Date.prototype.strftime = (function () {
     },
 
     y: function (date) {
-      return zeroPad(date.getYear() % 100);
+      return date.getYear() % 100;
     },
 
     Y: function (date) {
