@@ -13,9 +13,9 @@
     assert("%F should be shortcut for %Y-%m-%d",
            Date.formats.F === "%Y-%m-%d");
 
-    console.log (assert.count + "test OK ");
+    output (assert.count + " test OK ", "#0c0");
   } catch (e) {
-    console.log ("Test failed: " + e.message);
+    output ("Test failed: " + e.message, "#c00");
   }
 
 

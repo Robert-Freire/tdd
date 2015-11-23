@@ -9,3 +9,10 @@ function assert(message, expr) {
 }
 
 assert.count = 0;
+
+function output(text, color) {
+  var p = document.createElement("p");
+  p.innerHTML = text;
+  p.style.color = color;
+  document.body.appendChild(p);
+}
